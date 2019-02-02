@@ -130,5 +130,5 @@ function nbconvert_getHTMLByID($id, $html) {
 function nbconvert_enqueue_style() {
 	wp_enqueue_style( 'NbConvert', plugins_url( '/css/nbconvert.css', __FILE__ ));
 }
-//add_action( 'wp_enqueue_scripts', 'nbconvert_enqueue_style' );
+add_action( 'wp_enqueue_scripts', 'nbconvert_enqueue_style' );
 add_shortcode("nbconvert", "nbconvert_handler");
